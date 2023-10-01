@@ -15,7 +15,7 @@ class PostFilter(FilterSet):
         field_name='postCategory',
         queryset=Category.objects.all(),
         label='Категория',
-        emty_label='Выберите категорию',
+        empty_label='Выберите категорию',
     )
 
     dateCreation_after = DateTimeFilter(
